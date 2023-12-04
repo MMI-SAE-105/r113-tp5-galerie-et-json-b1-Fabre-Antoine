@@ -9,8 +9,8 @@
     .overlay {
         
         position: fixed;/* Sit on top of the page content */
-        width: 100%;/* Full width (cover the whole page) */
-        height: 100%;/* Full height (cover the whole page) */
+        width: 100vw;/* Full width (cover the whole page) */
+        height: 100vh;/* Full height (cover the whole page) */
         top: 0;/* Stay at the top */
         left: 0;/* Stay at the left */
         right: 0;/* Stay at the right */
@@ -22,25 +22,25 @@
         align-content: center;/* Center vertically and horizontally */
     }
     .overlay::after {
-        /* Add content : "X" */
-        /* White text color */
-        /* Black background color */
-        /* Font family "sans-serif" */
-        /* Centered text */
-        /* Line height ( idem height ) */
-        /* Display as a block */
-        /* Position absolute */
-        /* 1rem from the top */
-        /* 1rem from the right */
-        /* 2rem width */
-        /* 2rem height */
-        /* White border of 2px */
-        /* Rounded border */
+        content: "X";/* Add content : "X" */
+        color: white;/* White text color */
+        background-color: black;/* Black background color */
+        font-family: sans-serif;/* Font family "sans-serif" */
+        text-align: center;/* Centered text */
+        line-height: 2rem;/* Line height ( idem height ) */
+        display: block;/* Display as a block */
+        position: absolute;/* Position absolute */
+        top: 1rem;/* 1rem from the top */
+        right: 1rem;/* 1rem from the right */
+        width: 2rem;/* 2rem width */
+        height: 2rem;/* 2rem height */
+        border: solid 2px white;/* White border of 2px */
+        border-radius: 50%;/* Rounded border */
     }
     .overlay>figure {
-        /* No margin */
-        /* 1rem padding */
-        /* White border of 2px */
+        margin: 0;/* No margin */
+        padding: 1rem;/* 1rem padding */
+        border: solid 2px white;/* White border of 2px */
     }
     .overlay>figure>img {
         /* Max width 100% for responsive image */
