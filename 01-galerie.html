@@ -12,11 +12,22 @@
 }">
     <h1>Galerie</h1>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis obcaecati, cum non ducimus dolorum nisi fugit numquam architecto, dolores quis quas id. Facere accusantium tempore quibusdam ut impedit molestiae obcaecati!</p>
+<img src="https://picsum.photos/id/237/100/100" alt="un chiot"
+@click="imageurl = 'https://picsum.photos/id/237/400/300'"
+>
+<img src="https://picsum.photos/id/238/100/100" alt="New York"
+@click="imageurl = 'https://picsum.photos/id/238/400/300'"
+>
+<img src="https://picsum.photos/id/239/100/100" alt="un pissenlit"
+@click="imageurl = 'https://picsum.photos/id/239/400/300'"
+>
+<img src="https://picsum.photos/id/240/100/100" alt="un escalier"
+@click="imageurl = 'https://picsum.photos/id/240/400/300'"
+>
 <div class="overlay"
     x-show="imageurl"
     @click="imageurl =null" @keyup.space.window="imageurl =null" >
-    <figure>
-        <img :src="imageurl" alt="image 237... un chiot"></figure>
+    <figure><img :src="imageurl" alt="image 237... un chiot"></figure>
 </div>
 </body>
 </html>
