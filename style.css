@@ -37,6 +37,7 @@
     .overlay>figure>img {
         max-width: 100%;/* Max width 100% for responsive image */
         height: auto;/* Height auto for keeping the ratio */
+        
     }
 
     h1 {
@@ -48,3 +49,16 @@
         margin: 0 0 20px;
         text-decoration : underline; 
     }
+
+    body{
+        background-color: #cfeff7;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        
+        font-weight: 300;
+        text-align: center;
+        color: #000;
+        margin: 0 0 20px;
+    }
+    
